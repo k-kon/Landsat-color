@@ -14,7 +14,7 @@ import sys
 import os
 import cv2
 import color_util as ut
-
+import proj_util as pr
 """
 os.chdir('..')
 reload(ut)
@@ -35,7 +35,7 @@ while loop_flag:
               while True:
                 YorN = raw_input('save the image y/n?  ')
                 if YorN == 'y':
-                   cv2.imwrite('../'+fname+'.tif',cimg2)
+                   pr.write_tif('../'+fname+'.tif',cimg2,1)
                    loop_flag = False
                    break
                 elif YorN == 'n':
