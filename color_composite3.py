@@ -35,7 +35,7 @@ while loop_flag:
               while True:
                 YorN = raw_input('save the image y/n?  ')
                 if YorN == 'y':
-                   cv2.imwrite('../'+fname+'.tif',cimg)
+                   cv2.imwrite('../'+fname+'.tif',cimg2)
                    loop_flag = False
                    break
                 elif YorN == 'n':
